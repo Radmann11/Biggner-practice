@@ -1,0 +1,201 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(229, 56, 59);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.omotac{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+nav{
+    padding-top: 20px;
+    background-color: rgb(102, 7, 8);
+    text-align: center;
+    width: 100%;
+    height: auto;
+    z-index: 1000%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+    font-size: large;
+}
+
+nav li{
+    display: inline-block;
+    height: 50px;
+}
+
+nav li:hover a{
+    color: rgb(150, 150, 150); 
+    transform: scale(1.15);
+}
+
+#naslovna{
+    width:100%;
+    height: 150px;
+    object-fit: cover; 
+    display: block;
+}
+
+#tim{
+    width: 600px;
+    height: auto;
+    margin-right: 50px;
+    box-shadow: 10px 10px 12px;
+}
+
+.slika{
+    width: 600px;
+    height: auto;
+    box-shadow: 10px 10px 12px;
+}
+
+.slika-tekst{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 30px 30px 100px 30px;
+}
+
+
+.kartica{
+    align-self: center;
+    background-color: rgb(211, 211, 211);
+    padding: 20px;
+    padding-top: 50px; padding-bottom: 50px;
+    width: 400px;
+    margin: 40px;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 12px ; /* red shadow */
+    border-radius: 20px;
+}
+
+.kartica-igrac{
+    align-self: center;
+    background-color: rgb(211, 211, 211);
+    padding: 10px;
+    width: 200px;
+    margin: 20px;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 12px ; /* red shadow */
+    border-radius: 20px;
+}
+
+.slika-kartica{
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.naslov{
+    margin: 0  auto;
+    font-size: large;
+    width: 50%;
+    height: 40px;
+}
+
+#kontakt{
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 60px;
+    background-color: rgb(22, 26, 29);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px;
+}
+
+#kontakt input{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: large;
+    width: 90%;
+    height: 30px;
+    align-self: center;
+    border-radius: 5px;
+}
+
+#kontakt textarea{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: large;
+    width: 90%;
+    height: 150px;
+    align-self: center;
+    border-radius: 5px;
+}
+
+#kontakt button{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: large;
+    align-self: center;
+    background-color: rgb(211, 211, 211);
+    color: rgb(22, 26, 29);
+    border-radius: 10px;
+}
+
+@keyframes flyInBottom {
+    from{
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.animacija{
+    animation-name: flyInBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    background-color: rgb(22, 26, 29);
+}
+
+footer p{
+    font-size: large;
+    color: rgb(211, 211, 211);
+}
